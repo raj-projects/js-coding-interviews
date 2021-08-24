@@ -4,6 +4,7 @@ const getSecondSmallestNum = (arr = []) => {
   smallestNum = arr[0];
   secondSmallestNum = arr[0];
 
+  // Second Smallest
   for (i = arr.length; i > 0; i--) {
     if (arr[i] < smallestNum) {
       secondSmallestNum = smallestNum;
@@ -13,7 +14,7 @@ const getSecondSmallestNum = (arr = []) => {
     }
   }
 
-  console.log(secondSmallestNum);
+  console.log('second Smallest Number => ' + secondSmallestNum);
   return secondSmallestNum;
 };
 

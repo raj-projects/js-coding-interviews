@@ -14,7 +14,7 @@ const getSecondLargestNum = (arr = []) => {
     }
   }
 
-  console.log(secondLargestNum)
+  console.log('second Largest Number => '+ secondLargestNum)
   return secondLargestNum;
 };
 
