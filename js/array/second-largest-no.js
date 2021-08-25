@@ -1,3 +1,7 @@
+/*
+  1.0) 2nd Largest element of an unsorted array:
+*/
+
 const arrEle = [5, 22, 3, 43, 72, 8, 88, 90, 4, 6, 33];
 
 const getSecondLargestNum = (arr = []) => {
@@ -14,7 +18,7 @@ const getSecondLargestNum = (arr = []) => {
     }
   }
 
-  console.log('second Largest Number => '+ secondLargestNum)
+  console.log('second Largest Number => ' + secondLargestNum);
   return secondLargestNum;
 };
 
