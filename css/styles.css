@@ -1,3 +1,42 @@
 body {
-  background: orange;
+  /* background: orange; */
+}
+
+#parentDiv {
+  width: 300px;
+  height: 300px;
+  border: 2px solid#333;
+  background-color:burlywood;
+  /* display: flex; */
+  /* align-items: center; */
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+}
+
+#parentDiv p {
+  position: relative;
+}
+
+#parentDiv #childDiv {
+  width: 200px;
+  height: 200px;
+  border: 1px solid#333;
+  background-color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+#parentDiv #childDiv button{
+  width: 100px;
+  height: 40px;
+  border: 1px solid#333;
+  background-color: blue;
+  color: #fff;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 100%);
 }
