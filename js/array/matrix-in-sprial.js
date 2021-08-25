@@ -20,4 +20,4 @@ function sprial(matrix) {
 }
 
 let res = sprial(data);
-console.log(res);
+console.log('Matrix in sprial => ', res);
