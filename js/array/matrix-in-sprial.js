@@ -14,9 +14,10 @@ function sprial(matrix) {
       ...(matrix.pop() || []).reverse(),
       ...matrix.map(a => a.shift()).reverse()
     );
-    console.log(arr);
   }
+  // console.log(arr);
   return arr;
 }
 
 let res = sprial(data);
+console.log(res);
