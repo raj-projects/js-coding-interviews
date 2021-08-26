@@ -15,4 +15,4 @@ const nthFib = (n) => {
     return fibArray;
 }
 
-console.log(nthFib(50));
+console.log(nthFib(10));
