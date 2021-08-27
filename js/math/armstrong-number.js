@@ -4,7 +4,7 @@
 
     Formulla = abdc = an + bn + cn + dn
 */
-153
+
 const number = prompt('Please enter a number');
 const digitCount = number.toString().length; // find length of given number
 var temp = number;

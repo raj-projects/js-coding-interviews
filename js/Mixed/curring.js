@@ -25,3 +25,4 @@ const sub = (a) => (b) => (c) => (d) => a-b-c-d;
 const minus = sub(5)(10)(3)(7);
 console.log('Currying Sub', minus);
 
+
