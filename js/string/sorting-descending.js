@@ -5,7 +5,7 @@
 const str = "mupursingh";
 
 function strSorting(str) {
-    var descendingOrder = str.split('').sort().join('');
+    var descendingOrder = str.split('').sort().reverse().join('');
     return descendingOrder;
 }
 

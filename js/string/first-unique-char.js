@@ -5,29 +5,30 @@
 // const str = 'acccadc';
 
 // function firstUniqueChar(str) {
-//   const obj = {};
+  // const obj = {};
 
-//   for (let char of str) {
-//     obj[char] = obj[char] + 1 || 1;
-//   }
-//   for (let char in obj) {
-//     if (obj[char] === 1) {
-//       return char;
-//     }
-//   }
-//   return -1;
+  // for (let char of str) {
+  //   obj[char] = obj[char] + 1 || 1;
+  // }
+  // for (let char in obj) {
+  //   if (obj[char] === 1) {
+  //     return char;
+  //   }
+  // }
+  // return -1;
 // }
 
 // console.log('First Unique Char => ', firstUniqueChar(str));
 
 
-// second method
+/*=====================================
+    Second Method
+=====================================*/
 const name = 'acccadc';
 
 function nonRepeatingChar(str) {
   for (i = 0; i < str.length; i++) {
     let j = str.charAt(i);
-    // console.log('uniq char => ', j)
     if (str.indexOf(j) == str.lastIndexOf(j)) {
       return j;
     }

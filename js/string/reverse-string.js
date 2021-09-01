@@ -4,6 +4,6 @@
 
 const strValue = 'I AM A TESTER';
 
-let revString = () => strValue.split(' ').reverse(' ').join(' ');
+let revString = () => strValue.split(' ').reverse().join(' ');
 
 console.log(revString());

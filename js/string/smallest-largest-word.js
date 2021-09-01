@@ -21,5 +21,6 @@ function minMaxWord(str) {
 }
 
 const strValue = 'Ravi had been saying that he had been there';
+
 let result = minMaxWord(strValue);
 console.log(result);
