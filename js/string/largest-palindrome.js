@@ -1,29 +1,36 @@
-function is_Palindrome(str1) {
-    var rev = str1.split(' ').reverse().join(' ');
-    return str1 === rev;
+/*
+     Largest palindrome in a given string
+*/
+
+
+
+function is_Palindrome(str) {
+    var rev = str.split(' ').reverse().join(' ');
+    return str === rev;
 }
 
-function longest_palindrome(str1) {
-    var max_length = 0,
-    maxp = '';
+function longest_palindrome(str) {
+    let max_length = 0;
+    let result = '';
 
-    for (var i = 0; i < str1.length; i++) {
-        var subs = str1.substr(i, str1.length);
+    for(var i = 0; i < str.length; i++) {
+        var subs = str.substr(i, str.length);
 
-        for (var j = subs.length; j >= 0; j--) {
-            var sub_subs_str = subs.substr(0, j);
-            if (sub_subs_str.length <= 1) continue;
+        for(var j = subs.length; j >= 0; j--) {
+            var subStr = subs.substr(0, j);
 
-            if (is_Palindrome(sub_subs_str)) {
-                if (sub_subs_str.length > max_length) {
-                max_length = sub_subs_str.length;
-                maxp = sub_subs_str;
+            if(subStr.length <= 1) continue;
+
+            if(is_Palindrome(subStr)) {
+                if(subStr.length > max_length) {
+                    max_length = subStr.length;
+                    result = subStr;
                 }
             }
         }
     }
-
-    return maxp;
+    return result;
 }
-console.log(longest_palindrome("This is a racecar"));
+
+console.log(longest_palindrome("This is ba0ab racecar"));
   
