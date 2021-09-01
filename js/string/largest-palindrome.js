@@ -1,38 +1,29 @@
-/*
-     Largest palindrome in a given string
-*/
-
-
-let largestPalindrome = (str) => {
-    let result = '';
-
-    // if(!str) return result;
-
-    // for(let i=0; i<str.lenght; i++) {
-    //     for(let j=0; j<2; j++) {
-    //         let left = i;
-    //         let right = i+j;
-
-    //         while(left >= 0 && right <= str.length && str[left] == str[right]) {
-    //             left--;
-    //             right++;
-    //         }
-
-    //         let start = left+1;
-    //         let end = right;
-    //         let subString = str.slice(start, end);
-    //         console.log(subString);
-
-    //         if(result.length < subString.length) {
-    //             result = subString;
-    //         }
-    //     }
-    // }
-    // return result;
-
-    let revStr = str.split('').reverse().join('');
-
-    return revStr == str;
+function is_Palindrome(str1) {
+    var rev = str1.split(' ').reverse().join(' ');
+    return str1 === rev;
 }
 
-console.log(largestPalindrome('raceca'));
+function longest_palindrome(str1) {
+    var max_length = 0,
+    maxp = '';
+
+    for (var i = 0; i < str1.length; i++) {
+        var subs = str1.substr(i, str1.length);
+
+        for (var j = subs.length; j >= 0; j--) {
+            var sub_subs_str = subs.substr(0, j);
+            if (sub_subs_str.length <= 1) continue;
+
+            if (is_Palindrome(sub_subs_str)) {
+                if (sub_subs_str.length > max_length) {
+                max_length = sub_subs_str.length;
+                maxp = sub_subs_str;
+                }
+            }
+        }
+    }
+
+    return maxp;
+}
+console.log(longest_palindrome("This is a racecar"));
+  
