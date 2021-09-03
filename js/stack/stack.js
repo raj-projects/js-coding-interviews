@@ -15,7 +15,7 @@ class Stack {
     // Return and remove top element in stack
     // Return undefined if stack is empty
     pop() {
-        if(this.count == 0) return undefined
+        if (this.count == 0) return undefined
         let deleteItem = this.items[this.count - 1]
         this.count -= 1
         console.log(`${deleteItem} removed`)
@@ -43,7 +43,7 @@ class Stack {
     // Print elements in stack
     print() {
         let str = ''
-        for(let i = 0; i < this.count; i++) {
+        for (let i = 0; i < this.count; i++) {
             str += this.items[i] + ' '
         }
         return str

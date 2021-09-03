@@ -11,7 +11,7 @@ function findWhatsMissing(s) {
     
     s = s.toLowerCase();
 
-    return allAlphabets.split('').filter(function(letter) {
+    return allAlphabets.split('').filter((letter) => {
         return s.indexOf(letter) === -1;
     });
 }
