@@ -1,5 +1,5 @@
 /*
-    Reverse a Doubly linked list using recursion
+    43). Reverse a linked list using recursion
 */
 
 

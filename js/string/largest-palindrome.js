@@ -5,7 +5,7 @@
 
 
 function is_Palindrome(str) {
-    var rev = str.split(' ').reverse().join(' ');
+    var rev = str.split(' ').reverse().join(' ').trim();
     return str === rev;
 }
 

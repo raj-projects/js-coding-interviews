@@ -2,8 +2,6 @@
     Minimum distance between 2 words counting the number of characters from middle of both words. E.g. ABC is XYZ and ABC & XYZ are two distinct words. 
 */
 
-
-
 let word = "abc is abc and then xyz";
 let w1 = 'abc';
 let w2 = 'xyz';

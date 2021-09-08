@@ -38,23 +38,22 @@
     Second Method
 =====================================*/
 function nonRepeated(str) {
-    const arr = str.split('');
-    let charMap = {};
-    let count = 0;
-    let result = '';
-    
-    arr.forEach(char => {
-      if(charMap[char]) {
-        charMap[char]++;
-      } else {
-        charMap[char] = 1;     
-      }
-    })
-    
-    for(let char in charMap) {
-      result += `${char}${charMap[char]} `
+  const arr = str.split('');
+  let charMap = {};
+  let result = '';
+
+  arr.forEach(char => {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
     }
-    console.log(result);
+  })
+
+  for (let char in charMap) {
+    result += `${char}${charMap[char]} `
   }
-  
-  nonRepeated('aaaaabbbbbcdeeff');
+  console.log(result);
+}
+
+nonRepeated('aaaaabbbbbcdeeff');
